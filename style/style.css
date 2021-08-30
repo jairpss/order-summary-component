@@ -7,6 +7,7 @@ body {
   background-color: #e0e8ff;
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +17,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .main {
@@ -132,10 +134,39 @@ body {
 .content .buttons .pay-btn {
   background-color: #3829e0;
   border: none;
-  border-radius: 0.3rem;
-  padding: 0.9rem 5.5rem;
+  border-radius: 0.6rem;
+  padding: 0.8rem 5.5rem;
   color: #f5f7ff;
   font-weight: 700;
   margin-bottom: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+  -webkit-box-shadow: 0px 12px 20px rgba(85, 82, 255, 0.3);
+          box-shadow: 0px 12px 20px rgba(85, 82, 255, 0.3);
+}
+
+.content .buttons .pay-btn:hover {
+  background: #6055d8;
+  cursor: pointer;
+  border: none;
+  -webkit-box-shadow: 0px 12px 20px rgba(119, 117, 252, 0.3);
+          box-shadow: 0px 12px 20px rgba(119, 117, 252, 0.3);
+}
+
+.content .buttons .cancel-btn {
+  background-color: transparent;
+  border: none;
+  color: #7280a7;
+  font-weight: 700;
+  font-family: "Red Hat Display", sans-serif;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.content .buttons .cancel-btn:hover {
+  color: #1f2f56;
+  cursor: pointer;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,7 @@
 
 $pale-blue: hsl(225, 100%, 94%);
 $bright-blue: hsl(245, 75%, 52%);
+$btn-active: hsl(245, 63%, 59%);
 $very-pale-blue: hsl(225, 100%, 98%);
 $desaturated-blue: hsl(224, 23%, 55%);
 $dark-blue: hsl(223, 47%, 23%);
@@ -20,9 +21,11 @@ body {
   background-color: $pale-blue;
   background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .main {
@@ -111,11 +114,36 @@ body {
     .pay-btn {
       background-color: $bright-blue;
       border: none;
-      border-radius: 0.3rem;
-      padding: 0.9rem 5.5rem;
+      border-radius: 0.6rem;
+      padding: 0.8rem 5.5rem;
       color: $very-pale-blue;
       font-weight: 700;
       margin-bottom: 1rem;
+      font-family: $main-font;
+      transition: all ease-in-out 0.2s;
+      box-shadow: 0px 12px 20px rgba(85, 82, 255, 0.3);
+
+      &:hover {
+        background: $btn-active;
+        cursor: pointer;
+        border: none;
+        box-shadow: 0px 12px 20px rgba(119, 117, 252, 0.3);
+      }
+    }
+
+    .cancel-btn {
+      background-color: transparent;
+      border: none;
+      color: $desaturated-blue;
+      font-weight: 700;
+      font-family: $main-font;
+      transition: all ease-in-out 0.2s;
+
+      &:hover {
+        color: $dark-blue;
+        cursor: pointer;
+        border: none;
+      }
     }
   }
 }
