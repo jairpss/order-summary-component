@@ -21,7 +21,7 @@ body {
 .main {
   background-color: #ffffff;
   width: 24rem;
-  height: 32rem;
+  height: 35rem;
   border-radius: 20px;
   position: relative;
 }
@@ -79,11 +79,63 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .content .content-plan img {
   width: 50%;
   height: 50%;
-  padding: 0 .5rem;
+  padding: 0 1rem 0 0;
+}
+
+.content .content-plan .content-plan-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .content-plan .content-plan-text .content-plan-title {
+  font-weight: 900;
+  color: #1f2f56;
+  padding: 0;
+  margin: 1rem 1.5rem 0 0;
+}
+
+.content .content-plan .content-plan-text .content-plan-price {
+  padding: 0;
+  margin: 0 2rem 1rem 0;
+}
+
+.content .content-plan .content-plan-link {
+  color: #3829e0;
+  font-size: 0.8rem;
+  margin-left: 3rem;
+  font-weight: 700;
+}
+
+.content .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .buttons .pay-btn {
+  background-color: #3829e0;
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.9rem 5.5rem;
+  color: #f5f7ff;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
