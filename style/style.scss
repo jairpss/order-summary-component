@@ -19,7 +19,6 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: $pale-blue;
-  background-image: url("../images/pattern-background-desktop.svg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -30,8 +29,8 @@ body {
 
 .main {
   background-color: #ffffff;
-  width: 24rem;
-  height: 35rem;
+  // width: 24rem;
+  // height: 35rem;
   border-radius: 20px;
   position: relative;
 
@@ -64,7 +63,7 @@ body {
     font-size: 14px;
     font-weight: 500;
     line-height: 1.2rem;
-    padding: 0 2rem;
+    // padding: 0 2rem;
   }
 
   .content-plan {
@@ -73,7 +72,7 @@ body {
     flex-direction: row;
     align-items: center;
     border-radius: 0.5rem;
-    padding: 0.5rem 1.2rem;
+    // padding: 0.5rem 1.2rem;
     margin-bottom: 1.5rem;
 
     img {
@@ -102,8 +101,12 @@ body {
     .content-plan-link {
       color: $bright-blue;
       font-size: 0.8rem;
-      margin-left: 3rem;
+      // margin-left: 3rem;
       font-weight: 700;
+      transition: all ease-in-out 0.2s;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
@@ -115,7 +118,7 @@ body {
       background-color: $bright-blue;
       border: none;
       border-radius: 0.6rem;
-      padding: 0.8rem 5.5rem;
+      // padding: 0.8rem 5.5rem;
       color: $very-pale-blue;
       font-weight: 700;
       margin-bottom: 1rem;
@@ -145,5 +148,61 @@ body {
         border: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 376px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+    .main {
+      width: 24rem;
+      height: 35rem;
+    }
+  }
+
+  .content {
+    p {
+      padding: 0 2rem;
+    }
+
+    .content-plan {
+      padding: 0.5rem 1.2rem;
+    }
+
+    .content-plan-link {
+      margin-left: 3rem;
+    }
+  }
+
+  .pay-btn {
+    padding: 0.8rem 5.5rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url("../images/pattern-background-mobile.svg");
+    .main {
+      width: 20rem;
+      height: 33rem;
+    }
+  }
+
+  .content {
+    p {
+      padding: 0 2.5rem;
+    }
+
+    .content-plan {
+      padding: 0.5rem 1rem;
+    }
+
+    .content-plan-link {
+      margin-left: 0.5rem;
+    }
+  }
+
+  .pay-btn {
+    padding: 0.8rem 4.2rem;
   }
 }
